@@ -1,0 +1,15 @@
+<h1 class="main-title">Photo Folder</h2>
+<p class="blurb">A site for categorizing your images!</p>
+
+
+{{#if folders}}
+    <ul class="home-list">
+        
+    {{#each folders as |f|}}
+    <li><a href="/folder/{{slug}}">{{title}}</a></li>
+    {{/each}}
+    </ul>
+
+    {{else}}
+    <p class="no-x-message">No folders yet! Click 'Create new folder' to get started.</p>
+{{/if}}

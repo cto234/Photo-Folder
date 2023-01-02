@@ -1,0 +1,17 @@
+<a href="/folder/{{slug}}/edit-title"><h1 class="inner-title">{{title}}</h1></a>
+<p class="folder-description">{{description}}</p>
+<a href="/folder/{{slug}}/add-image"><button class="add-image-button">Add Image</button></a>
+{{#if images}}
+    <ul class="gallery">
+    {{#each images as |i|}}
+        <li class="images">
+            <img class="image" src="{{url}}"></img>
+            <p class="caption">{{caption}}</p>
+        </li>
+
+    {{/each}}
+    </ul>
+
+    {{else}}
+    <p class="no-x-message">No images yet! Click 'Add image' to get started.</p>
+{{/if}}

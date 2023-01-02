@@ -1,0 +1,289 @@
+.add-button {
+  font: 100% Helvetica, sans-serif;
+  float: right;
+}
+.add-button a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.add-button a:hover {
+  background-color: rgb(109, 159, 212);
+}
+
+.home-link {
+  font: 100% Helvetica, sans-serif;
+  float: left;
+}
+.home-link a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+.home-link a:hover {
+  background-color: rgb(109, 159, 212);
+}
+
+body {
+  background-color: white;
+}
+
+h1.main-title {
+  font: 400% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.top-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(65, 137, 214);
+}
+
+p.blurb {
+  font: 125% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+
+p.no-x-message {
+  font: 90% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  display: block;
+  padding: 15em;
+}
+
+label.add-title {
+  font: 90% Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+h1.create {
+  font: 300% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  display: block;
+  margin-left: 12px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.add-box {
+  margin: 8px;
+  width: 300px;
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.132);
+  border-radius: 20px;
+  display: grid;
+}
+
+.add-caption {
+  margin: 8px;
+  width: 300px;
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.132);
+  border-radius: 20px;
+  display: grid;
+  height: 200px;
+}
+
+input[type=submit] {
+  margin: 8px;
+  width: 300px;
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.132);
+  border-radius: 20px;
+  display: grid;
+  width: 340px;
+}
+
+h1.inner-title {
+  font: 300% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  float: left;
+}
+
+.add-image-button {
+  font: 20px Helvetica, sans-serif;
+  margin: 15px;
+  width: 150px;
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.197);
+  border-radius: 20px;
+  display: grid;
+  float: right;
+}
+
+.gallery {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+.gallery img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
+.gallery li {
+  list-style-type: none;
+}
+.gallery p {
+  width: 425px;
+}
+
+p.caption {
+  font: 14px Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.home-list {
+  font: 300% Helvetica, sans-serif;
+  font-weight: 100;
+  margin-left: 75px;
+  list-style-type: none;
+}
+.home-list li {
+  padding: 10px 10px;
+}
+.home-list a {
+  color: black;
+  text-decoration-thickness: 3px;
+}
+
+.login-box, .register-box {
+  margin: 8px;
+  width: 300px;
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.132);
+  border-radius: 20px;
+  display: grid;
+}
+
+h1.login-title {
+  font: 300% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  display: block;
+  margin-left: 12px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.login, .register {
+  font: 300% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  display: block;
+  margin-left: 12px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.reg-title {
+  font: 300% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  display: block;
+  margin-left: 12px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 0;
+  margin-top: 65px;
+}
+
+.reg-box {
+  margin: 8px;
+  width: 300px;
+  padding: 20px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.132);
+  border-radius: 20px;
+  display: grid;
+}
+
+.error {
+  font: 100% Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.sign-out {
+  font: 75% Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+  text-decoration: underline;
+}
+
+.logged-in-as {
+  font: 85% Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+}
+
+.error {
+  font: 400% Helvetica, sans-serif;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.error-message {
+  font: 200% Helvetica, sans-serif;
+  font-weight: 100;
+  text-align: center;
+}
+
+.folder-description {
+  font: 100% Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  display: block;
+  margin-left: 20px;
+  margin-top: 32px;
+  padding: 10px;
+  float: left;
+}
+
+.log {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
