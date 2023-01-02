@@ -31,25 +31,6 @@ An Example Image:
 ## [Link to Commented First Draft Schema](db.mjs) 
 
 
-## Wireframes
-
-/login - Login page
-
-![login](documentation/login.jpeg)    
-
-/home - Home page shows all folders
-
-![home](documentation/home-page.jpeg)   
-
-/folder/:slug - The contents of a folder
-
-![folder/:slug](documentation/folder-contents.jpeg)   
-
-## Site map
-
-![Site Map](documentation/site-map.jpeg)      
-
-
 ## User Stories or Use Cases
 
 1. As a non-registered user I can register and set a username/password
@@ -58,16 +39,6 @@ An Example Image:
 4. As a user I can add images to a folder
 5. As a user I can add captions to images
 6. As a user I can edit the title and description of an existing folder by clicking on the title when viewing its contents
-
-## Research Topics
-
-* (2 points) Use SASS for CSS 
-  * Working with CSS is usually pretty painful. I'd like to learn to use SASS to make the preprocessing a smoother and 
-  * More efficient process
-* (3 points) dotenv for configuration management
-  * Although not much, there are a few things that should be stored in a seperate .env file instead of being directly in code such as port and mongo server info.
-
-
 
 ## [Link to Initial Main Project File](app.mjs) 
 
