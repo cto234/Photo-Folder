@@ -31,19 +31,13 @@ An Example Image:
 ## [Link to Commented First Draft Schema](db.mjs) 
 
 
-## User Stories or Use Cases
+## How to Run
 
-1. As a non-registered user I can register and set a username/password
-2. As a user I can create a new folder if one doesn't already exist
-3. As a user I can examine the contents of an existing folder
-4. As a user I can add images to a folder
-5. As a user I can add captions to images
-6. As a user I can edit the title and description of an existing folder by clicking on the title when viewing its contents
+Use 'node app.mjs' in terminal to run this project.
 
 ## [Link to Initial Main Project File](app.mjs) 
 
 ## Annotations / References Used
 
-Authentication/login process: Homework 5
 dotenv documentation: https://www.npmjs.com/package/dotenv 
 SASS documentation: https://sass-lang.com/documentation/ (proof of running on save is in documentation folder in repo)

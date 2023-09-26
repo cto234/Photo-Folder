@@ -1,9 +1,3 @@
-/*
-
-CITATION:   This is from homework 5!
-
-*/
-
 import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 

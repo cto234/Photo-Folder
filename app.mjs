@@ -4,7 +4,6 @@ import session from 'express-session';
 import express from 'express'
 import path from 'path'
 import { fileURLToPath } from 'url';
-import { ppid } from 'process';
 import * as auth from './auth.mjs';
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -60,9 +59,7 @@ const allowedPaths = [process.env.SIGN_PATH, process.env.LOGIN_PATH, process.env
 const filteredPaths = paths.filter(path => allowedPaths.includes(path)); //higher order function (filter)
 
 
-//From hw5
 //require authentication to access certain paths:       --param is array of paths
-//unlike homework, this is list onf acceptable paths (there's much less of them)
 
 app.use(auth.authNotRequired(filteredPaths));
 
