@@ -235,7 +235,7 @@ app.get('/register', (req, res) => {
     }
   
     // attempt to register new user
-    auth.register(req.body.username, req.body.password, error, success);
+    auth.register(req.body.username, req.body.password, req.body.passwordConfirm, error, success);
   });
 //---------------------login stuff--------------------//
 

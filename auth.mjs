@@ -35,50 +35,51 @@ function hashPassword(password, cb) {
   });
 }
 
-function register(username, password, errorCallback, successCallback) {
+function register(username, password, passwordConfirm, errorCallback, successCallback) {
   if (username.length >= 4 && password.length >= 8) {
-    User.find({username: username}, (err, users, count) => {
-      if (!err && count === undefined && users.length === 0) {
-        hashPassword(password, (err, hash) => {
-          if(!err) {
-            // TODO: create and save a user
-            // call errorCallback or successCallback as necessary
-            // make sure the error message match!
-            const userObject = new User({
-              username: username,
-              password: hash 
-            }); 
+    if (password === passwordConfirm) { // Check if password and password confirmation match
+      User.find({ username: username }, (err, users, count) => {
+        if (!err && count === undefined && users.length === 0) {
+          hashPassword(password, (err, hash) => {
+            if (!err) {
+              // TODO: create and save a user
+              // call errorCallback or successCallback as necessary
+              // make sure the error message match!
+              const userObject = new User({
+                username: username,
+                password: hash
+              });
 
               userObject.save((err, result) => {
-
-                if(err){                            //error saving user
+                if (err) {
                   console.log('error saving document');
                   console.log(err);
-                  errorCallback({message:'DOCUMENT SAVE ERROR'});
-    
-                }else{                                //user saved successfully
+                  errorCallback({ message: 'DOCUMENT SAVE ERROR' });
+                } else {
                   console.log("Registration successful");
                   console.log("New user's info: ");
                   console.log(result);
                   successCallback(result);
                 }
-    
               });
 
-          } else {
-            errorCallback({message: 'HASH ERROR ' + err});
-          }
-        });
-      } else {
-        // TODO: handle user already exists case
-        console.log('username already exists in database');
-        errorCallback({message:'USERNAME ALREADY EXISTS'});
-      }
-    });
+            } else {
+              errorCallback({ message: 'HASH ERROR ' + err });
+            }
+          });
+        } else {
+          console.log('username already exists in database');
+          errorCallback({ message: 'USERNAME ALREADY EXISTS' });
+        }
+      });
+    } else {
+      errorCallback({ message: 'PASSWORDS DO NOT MATCH' });
+    }
   } else {
-    errorCallback({message: 'USERNAME PASSWORD TOO SHORT'});
+    errorCallback({ message: 'USERNAME PASSWORD TOO SHORT' });
   }
 }
+
 
 const login = (username, password, errorCallback, successCallback) => {
   User.findOne({username: username}, (err, user) => {

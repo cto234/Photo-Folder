@@ -30,6 +30,9 @@ mongoose.model('User', UserSchema);
 mongoose.model('Image', ImageSchema);
 mongoose.model('Folder', FolderSchema);
 
+//Necessary to prevent warning
+mongoose.set('strictQuery', false); 
+
 
 //connection to MongoDB Atlas - https://cloud.mongodb.com/v2/6361786d773fda03b90618ce#clusters
 mongoose.connect(process.env.MONGO_KEY);

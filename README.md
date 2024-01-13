@@ -2,7 +2,10 @@
 
 ## Overview
 
-Your one stop to store and organize images you find on the web! Sort images into folders based on whatever criteria you want. Maybe you'd like to create a folder of images for your desktop background that you've found online, or cute pictures of cats that you don't want to lose. Whatever it may be, this web app will allow you to store all these images in a clean and organized fashion.
+Your one stop to store and organize images you find on the web! Sort images into folders based on whatever criteria you want. Maybe you'd like to create a folder of images for your desktop background that you've found online, or cute pictures of cats that you don't want to lose. Whatever it may be, this web app will allow you to store all these images in a clean and organized fashion without taking up lots of storage on your computer.
+
+## Tech
+This project uses Node.js, Handlebars, and MongoDB Atlas. On registration, the user's password is hashed and encrypted using bcrypt before being stored in the database. 
 
 ## Data Model
 
