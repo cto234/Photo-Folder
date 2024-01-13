@@ -1,6 +1,6 @@
 # Photo Folder
 
-<img width="958" alt="photoFolder" src="[https://github.com/cto234/Photo-Folder](https://github.com/cto234/Photo-Folder/blob/main/photo-folder.png)">
+<img width="958" alt="photoFolder" src="https://github.com/cto234/Photo-Folder/blob/main/photo-folder.png">
 
 
 ## Overview
